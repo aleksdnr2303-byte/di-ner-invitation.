@@ -1,0 +1,11 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Редактор приглашений</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="shell"><header><div class="eyebrow">PERSONAL INVITATION STUDIO</div><h1>Твои приглашения ✦</h1><p class="muted">Создавай, редактируй и отправляй готовые ссылки.</p></header>
+<section id="login" class="panel"><h2>Вход в редактор</h2><input id="password" type="password" placeholder="Пароль администратора"><button id="loginBtn">Войти</button><p id="loginError" class="error"></p></section>
+<section id="editor" class="panel hidden"><div class="sectionhead"><h2>Новое приглашение</h2><span class="pill">Режим редактора</span></div>
+<label>Заголовок<input id="title" value="У меня есть для тебя предложение…"></label>
+<label>Текст приглашения<textarea id="message">Хочу провести этот день вместе с тобой. Как насчёт маленького свидания? ❤️</textarea></label>
+<div class="two"><label>Кнопка «да»<input id="yesText" value="Да, с удовольствием"></label><label>Вторая кнопка<input id="noText" value="Не получится"></label></div>
+<div class="two"><label>Подпись даты<input id="dateLabel" value="Выбери удобную дату"></label><label>Подпись времени<input id="timeLabel" value="И время тоже"></label></div>
+<label>Оформление<select id="theme"><option value="rose">Розовое / романтичное</option><option value="night">Ночное / звёздное</option><option value="cream">Тёплое / минимализм</option></select></label>
+<button id="createBtn">Создать ссылку</button><p id="createStatus" class="muted"></p><div id="links"></div><hr><h3>Мои приглашения</h3><div id="list"></div></section>
+<footer>Финальный экран: <a href="https://t.me/di_ner" target="_blank" rel="noreferrer">@di_ner</a></footer></main><script src="/admin.js"></script></body></html>
